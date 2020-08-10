@@ -9,13 +9,13 @@ function Navbar() {
                 <h2>Shop</h2>
                 <ul>
                     <li>
-                        <a h href="#">Home</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
-                        <a h href="#">About</a>
+                        <a href="#">About</a>
                     </li>
                     <li className="cart">
-                        <a h href="#"><ion-icon name="basket-outline"></ion-icon>Cart<span>0</span></a>
+                        <a href="#"><ion-icon name="basket-outline"></ion-icon>Cart<span>0</span></a>
                     </li>
                 </ul>
             </nav>
