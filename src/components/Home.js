@@ -9,7 +9,7 @@ import addBasket from '../actions/addAction'
 const Home = (props) => {
 
 
-        console.log(props:)
+        console.log(props);
         
     return(
         <div className="container">
@@ -52,4 +52,4 @@ const Home = (props) => {
 
 }
 
-export default connect (null, {addBasket) (Home);
+export default connect(null, { addBasket } (Home))

@@ -1,4 +1,4 @@
-import ADD_PRODUCT_TO_BASKET from './types'
+import { ADD_PRODUCT_BASKET } from './types'
 
 
 
@@ -13,3 +13,4 @@ export const addBasket = () => {
     }
 
 }
+
