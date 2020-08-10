@@ -3,10 +3,13 @@ import Cats from '../images/cats.png'
 import Muscles from '../images/muscles.jpg'
 import Infinity from '../images/infinity.png'
 import Newspaper from '../images/newspaper.jpg'
+import { connect } from 'react-redux';
+import addBasket from '../actions/addAction'
 
-const Home = () => {
+const Home = (props) => {
 
 
+        console.log(props:)
         
     return(
         <div className="container">
@@ -49,4 +52,4 @@ const Home = () => {
 
 }
 
-export default Home;
+export default connect (null, {addBasket) (Home);
