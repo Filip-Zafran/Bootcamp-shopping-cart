@@ -17,7 +17,7 @@ const Home = (props) => {
                 <img src={Cats} alt="Cats T-shirt" />
                 <h3>Crazy cats shirt</h3>
                 <h4><i>25.00 €</i></h4>
-                            <a className="addToCart cart1" href="#">Add to chart</a>                
+                            <a onClick={props.addBasket} className="addToCart cart1" href="#">Add to chart</a>                
 
             </div>
             
@@ -25,7 +25,7 @@ const Home = (props) => {
                 <img src={Newspaper} alt="Newspaper shirt" />
                 <h3>Newspaperman shirt</h3>
                 <h4><i>15.00 €</i></h4>
-<a className="addToCart cart2" href="#">Add to chart</a>                
+<a   onClick={props.addBasket} className="addToCart cart2" href="#">Add to chart</a>                
 
             </div>
             
@@ -33,7 +33,7 @@ const Home = (props) => {
                 <img src={Infinity} alt="Infinity shirt" />
                 <h3>Holesome shirt</h3>
                 <h4><i>33.00 €</i></h4>
-<a className="addToCart cart3" href="#">Add to chart</a>                
+<a  onClick={props.addBasket}  className="addToCart cart3" href="#">Add to chart</a>                
 
             </div>
             
@@ -41,7 +41,7 @@ const Home = (props) => {
                 <img src={Muscles} alt="Muscles shirt" />
                 <h3>Abs shirt</h3>
                 <h4><i>20.00 €</i></h4>
-<a className="addToCart cart4" href="#">Add to chart</a>                
+<a  onClick={props.addBasket}  className="addToCart cart4" href="#">Add to chart</a>                
 
                     </div>
   
