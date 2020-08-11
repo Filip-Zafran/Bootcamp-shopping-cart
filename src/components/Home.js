@@ -3,8 +3,8 @@ import Cats from '../images/cats.png'
 import Muscles from '../images/muscles.jpg'
 import Infinity from '../images/infinity.png'
 import Newspaper from '../images/newspaper.jpg'
-import { connect } from 'react-redux';
-import addBasket from '../actions/addAction'
+import { connect } from 'react-redux'
+import addToBasket from '../actions/addAction'
 
 const Home = (props) => {
 
@@ -17,7 +17,7 @@ const Home = (props) => {
                 <img src={Cats} alt="Cats T-shirt" />
                 <h3>Crazy cats shirt</h3>
                 <h4><i>25.00 €</i></h4>
-                            <a onClick={props.addBasket} className="addToCart cart1" href="#">Add to chart</a>                
+                            <a onClick={props.addToBasket} className="addToCart cart1" href="#">Add to chart</a>                
 
             </div>
             
@@ -25,7 +25,7 @@ const Home = (props) => {
                 <img src={Newspaper} alt="Newspaper shirt" />
                 <h3>Newspaperman shirt</h3>
                 <h4><i>15.00 €</i></h4>
-<a   onClick={props.addBasket} className="addToCart cart2" href="#">Add to chart</a>                
+<a   onClick={props.addToBasket} className="addToCart cart2" href="#">Add to chart</a>                
 
             </div>
             
@@ -33,7 +33,7 @@ const Home = (props) => {
                 <img src={Infinity} alt="Infinity shirt" />
                 <h3>Holesome shirt</h3>
                 <h4><i>33.00 €</i></h4>
-<a  onClick={props.addBasket}  className="addToCart cart3" href="#">Add to chart</a>                
+<a  onClick={props.addToBasket}  className="addToCart cart3" href="#">Add to chart</a>                
 
             </div>
             
@@ -41,7 +41,7 @@ const Home = (props) => {
                 <img src={Muscles} alt="Muscles shirt" />
                 <h3>Abs shirt</h3>
                 <h4><i>20.00 €</i></h4>
-<a  onClick={props.addBasket}  className="addToCart cart4" href="#">Add to chart</a>                
+<a  onClick={props.addToBasket}  className="addToCart cart4" href="#">Add to chart</a>                
 
                     </div>
   
@@ -52,4 +52,8 @@ const Home = (props) => {
 
 }
 
-export default connect(null, { addBasket } (Home))
+const mapDisptachToProps = (dispatch) => ({ 
+  addToBasket: () => dispatch(addToBasket()),
+});
+
+export default connect(null, mapDisptachToProps)(Home);

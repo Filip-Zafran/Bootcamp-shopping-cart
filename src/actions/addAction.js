@@ -1,16 +1,7 @@
 import { ADD_PRODUCT_BASKET } from './types'
 
+const addToBasket = () => ({
+    type: ADD_PRODUCT_BASKET
+});
 
-
-
-export const addBasket = () => {
-    return (dispatch) => {
-        console.log("Adding to Basket");
-        dispatch({
-
-            type: ADD_PRODUCT_BASKET
-        })
-    }
-
-}
-
+export default addToBasket;
