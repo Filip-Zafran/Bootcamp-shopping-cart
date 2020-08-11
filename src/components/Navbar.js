@@ -1,7 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import [connect] from 'react-redux';
+import {  getNumbers} from ',,/actions/getAction'
 
-
-function Navbar() {
+function Navbar(props) {
     return (
         <header>
             <div className="overlay"></div>
@@ -15,7 +17,7 @@ function Navbar() {
                         <a href="#">About</a>
                     </li>
                     <li className="cart">
-                        <a href="#"><ion-icon name="basket-outline"></ion-icon>Cart<span>0</span></a>
+                        <a href="#"><ion-icon name="basket-outline"></ion-icon>Cart<span>{props.basketProps}</span></a>
                     </li>
                 </ul>
             </nav>
@@ -24,4 +26,6 @@ function Navbar() {
     );
 }
 
-    export default Navbar;
+const mapStateToProps = state => ({basketProps: state.basketState})
+
+export default connect(mapStateToProps, { getNumbers })(Navbar);
