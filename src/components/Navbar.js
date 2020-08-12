@@ -13,7 +13,7 @@ function Navbar(props) {
         <header>
             <div className="overlay"></div>
             <nav>
-                <h2>Shop</h2>
+                <h2 id="titleText">Ficho's little Shop of horrors</h2>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
@@ -22,7 +22,7 @@ function Navbar(props) {
                         <Link to="/about">About</Link>
                     </li>
                     <li className="cart">
-                        <Link to="/cart"><ion-icon name="basket-outline"></ion-icon>Cart &nbsp; <span>{props.basketProps.basketNumbers}&nbsp;</span></Link>
+                        <Link to="/cart"><ion-icon name="basket-outline"></ion-icon>Cart &nbsp;(<span>{props.basketProps.basketNumbers})&nbsp;</span></Link>
                     </li>
                 </ul>
             </nav>
