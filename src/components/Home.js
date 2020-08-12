@@ -52,8 +52,8 @@ const Home = (props) => {
 
 }
 
-const mapDisptachToProps = (dispatch) => ({ 
-  addToBasket: () => dispatch(addToBasket()),
+const mapDispatchToProps = (dispatch) => ({ 
+        addToBasket: () => dispatch(addToBasket()),
 });
 
-export default connect(null, mapDisptachToProps)(Home);
+export default connect(null, mapDispatchToProps)(Home);
