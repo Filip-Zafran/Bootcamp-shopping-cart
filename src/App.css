@@ -59,9 +59,10 @@ li a {
 }
 
 .cart a {
-	background-color: blue;
+	background-color: rgb(77, 143, 219);
 	color: #fff;
 	cursor: pointer;
+	font-weight: bold;
 	text-decoration: none;
 }
 
