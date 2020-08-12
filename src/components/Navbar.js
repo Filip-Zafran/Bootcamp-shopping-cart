@@ -1,16 +1,13 @@
-import React from 'react';
+import React, {useEffect } from 'react';
 import { connect } from 'react-redux';
 import { getNumbers } from '../actions/getAction';
 
 function Navbar(props) {
 
-
     useEffect(() => {
-        effect
-        return () => {
-            cleanup
-        }
-    }, [input])
+        getNumbers();
+    },[])
+
     return (
         <header>
             <div className="overlay"></div>
